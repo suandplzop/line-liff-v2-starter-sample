@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(() => {
         console.log("Success! you can do something with LIFF API here.")
     
-        liff.login()
-    
         if (liff.isLoggedIn()) {
           const idToken = liff.getDecodedIDToken();
           console.log(idToken); 
